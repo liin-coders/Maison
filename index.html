@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAISON — Fine Dining & Modern Gastronomy</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="servicestyle.css">
+  <link rel="stylesheet" href="restaurantstyle.css">
+
+</head>
+
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar">
+      <a href="index.html" class="logo">MAISON<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link ">About us</a>
+        <a href="#menu" class="nav-link">Our Menus</a>
+        <a href="#blogs" class="nav-link">Blogs</a>
+        <a href="#reservation" class="nav-cta">Reservation ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-track">
+        <div class="hero-slide active">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=85"
+            alt="Maison Dining Area">
+        </div>
+        <div class="hero-slide">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=2000&q=85"
+            alt="Gourmet Plating">
+        </div>
+        <div class="hero-slide">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=2000&q=85"
+            alt="Luxury Bar Space">
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-subtitle">Haute Cuisine & Elegant Atmosphere</span>
+        <h1 class="hero-title">Where Culinary Craft Meets Perfection</h1>
+        <p class="hero-description">Experience an unforgettable journey of refined flavors, thoughtful ingredients, and
+          artisanal French-Mediterranean hospitality in Pathankot.</p>
+        <a href="menu.html" class="hero-btn">
+          <span>Explore Modern Menu</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="section-header">
+        <span class="section-tag">01 — Exceptional Hospitality</span>
+        <h2 class="section-title">Our Premium Services</h2>
+        <p class="section-desc">Designed to elevate every dining occasion, from celebratory milestones to private
+          corporate galas.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div>
+            <div class="service-icon-box"><i class="fa-solid fa-wine-glass-empty"></i></div>
+            <h3>Private Dining Rooms</h3>
+            <p>Secluded luxury suites crafted for intimate dinners, acoustic privacy, and personalized multi-course
+              sommelier tastings.</p>
+          </div>
+          <a href="#contact" class="service-link">Discover Service <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div>
+            <div class="service-icon-box"><i class="fa-solid fa-champagne-glasses"></i></div>
+            <h3>Luxury Event Hosting</h3>
+            <p>Bespoke planning for weddings, anniversaries, and grand social celebrations with tailored floral decor
+              and ambient lighting.</p>
+          </div>
+          <a href="#contact" class="service-link">Discover Service <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div>
+            <div class="service-icon-box"><i class="fa-solid fa-utensils"></i></div>
+            <h3>Curated Chef's Table</h3>
+            <p>Front-row seats to culinary artistry. Enjoy dynamic live kitchen interactions with Executive Chef curated
+              seasonal surprises.</p>
+          </div>
+          <a href="#contact" class="service-link">Discover Service <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div>
+            <div class="service-icon-box"><i class="fa-solid fa-briefcase"></i></div>
+            <h3>Corporate Executive Dining</h3>
+            <p>Polished corporate hospitality packages featuring express multi-course luncheons, high-speed Wi-Fi, and
+              quiet meeting zones.</p>
+          </div>
+          <a href="#contact" class="service-link">Discover Service <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div>
+            <div class="service-icon-box"><i class="fa-solid fa-cocktail"></i></div>
+            <h3>Artisanal Mixology Lounge</h3>
+            <p>Signature botanical cocktails, vintage spirits, and house-infused bitters served in hand-blown crystal
+              glassware.</p>
+          </div>
+          <a href="#contact" class="service-link">Discover Service <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div>
+            <div class="service-icon-box"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <h3>Private Gourmet Catering</h3>
+            <p>Bring Maison's Michelin-inspired dining experience to your residence with our full-service mobile chef
+              and butler team.</p>
+          </div>
+          <a href="#contact" class="service-link">Discover Service <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="menus-section" id="menus">
+      <div class="section-header">
+        <span class="section-tag">02 — Gastronomic Selections</span>
+        <h2 class="section-title">Explore Our Menus</h2>
+        <p class="section-desc">Indulge in dish compositions crafted from organic local produce and imported European
+          delicacies.</p>
+      </div>
+
+      <!-- 8 Category buttons in a row -->
+      <div class="menu-tabs-wrapper">
+        <div class="menu-tabs">
+          <button class="menu-tab-btn active" onclick="switchCategory('starters', this)">Starters</button>
+          <button class="menu-tab-btn" onclick="switchCategory('mains', this)">Main Course</button>
+          <button class="menu-tab-btn" onclick="switchCategory('pizza', this)">Woodfire Pizza</button>
+          <button class="menu-tab-btn" onclick="switchCategory('pasta', this)">Pastas & Risotto</button>
+          <button class="menu-tab-btn" onclick="switchCategory('seafood', this)">Seafood</button>
+          <button class="menu-tab-btn" onclick="switchCategory('desserts', this)">Desserts</button>
+          <button class="menu-tab-btn" onclick="switchCategory('beverages', this)">Beverages</button>
+          <button class="menu-tab-btn" onclick="switchCategory('specials', this)">Chef Specials</button>
+        </div>
+      </div>
+
+      <!-- Dish Grid Display -->
+      <div class="menu-items-grid" id="menuGrid">
+        <!-- Content dynamic JS loaded -->
+      </div>
+
+      <!-- Menu Section CTA Box -->
+      <div class="menu-cta-box">
+        <div class="menu-cta-content">
+          <h3>Reserve Your Culinary Journey</h3>
+          <p>Planning a romantic dinner or private celebration? Reserve your table in advance and let our sommeliers
+            prepare a tailored wine pairing.</p>
+        </div>
+        <a href="contact.html" class="menu-cta-btn">Book Table Now ↗</a>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-header">
+        <span class="section-tag">03 — Visual Splendor</span>
+        <h2 class="section-title">Our Restaurant Gallery</h2>
+        <p class="section-desc">A visual celebration of elegant architectural interior spaces, artisan dish
+          presentations, and vibrant evenings.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80"
+            alt="Ambiance 1"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+            alt="Dish 2"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80"
+            alt="Interior 3"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+            alt="Food 4"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+            alt="Table 5"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+            alt="Pizza 6"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80"
+            alt="Dining 7"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80"
+            alt="Drink 8"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80"
+            alt="Chef 9"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+            alt="Gourmet 10"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
+            alt="Wine 11"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=800&q=80"
+            alt="Desert 12"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80"
+            alt="Party 13"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=800&q=80"
+            alt="Seafood 14"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80"
+            alt="Bar 15"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80"
+            alt="Salad 16"></div>
+        <div class="gallery-item"><img
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80"
+            alt="Interior 17"></div>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="testimonials">
+      <div class="section-header">
+        <span class="section-tag">04 — Patron Impressions</span>
+        <h2 class="section-title">Google Rating Reviews</h2>
+        <p class="section-desc">Read verified experiences from our esteemed guests. Scroll down to view stacking review
+          cards.</p>
+      </div>
+
+      <div class="reviews-stack-wrapper">
+        <article class="review-card" style="z-index: 1;">
+          <div class="google-badge-header">
+            <div class="google-badge"><i class="fa-brands fa-google"></i> Google Review</div>
+            <div class="star-rating">★★★★★</div>
+          </div>
+          <p class="review-text">"Maison delivers an absolute masterclass in fine dining. The Truffle Tagliatelle and
+            Chilean Sea Bass were cooked to pure perfection. Stunning lighting and top-tier service!"</p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+              alt="Sophia Sharma" class="reviewer-avatar">
+            <div class="reviewer-info">
+              <h4>Sophia Sharma</h4>
+              <p>Verified Local Guide • 2 weeks ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" style="z-index: 2;">
+          <div class="google-badge-header">
+            <div class="google-badge"><i class="fa-brands fa-google"></i> Google Review</div>
+            <div class="star-rating">★★★★★</div>
+          </div>
+          <p class="review-text">"Celebrated our 10th anniversary in their private dining suite. The staff went above
+            and beyond with custom printed menu cards and candle arrangements. Unforgettable!"</p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
+              alt="Rajesh Malhotra" class="reviewer-avatar">
+            <div class="reviewer-info">
+              <h4>Rajesh Malhotra</h4>
+              <p>Verified Google User • 1 month ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" style="z-index: 3;">
+          <div class="google-badge-header">
+            <div class="google-badge"><i class="fa-brands fa-google"></i> Google Review</div>
+            <div class="star-rating">★★★★★</div>
+          </div>
+          <p class="review-text">"Best woodfire pizza and artisanal cocktails in Pathankot! The atmosphere feels like
+            stepping into a luxury Parisian bistro. 10/10 recommendation!"</p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+              alt="Ananya Verma" class="reviewer-avatar">
+            <div class="reviewer-info">
+              <h4>Ananya Verma</h4>
+              <p>Food & Lifestyle Critic • 3 weeks ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" style="z-index: 4;">
+          <div class="google-badge-header">
+            <div class="google-badge"><i class="fa-brands fa-google"></i> Google Review</div>
+            <div class="star-rating">★★★★★</div>
+          </div>
+          <p class="review-text">"Remarkable wine cellar collection and knowledgeable sommelier. The pairing
+            recommendations complemented our ribeye steak and duck breast seamlessly."</p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+              alt="David Miller" class="reviewer-avatar">
+            <div class="reviewer-info">
+              <h4>David Miller</h4>
+              <p>Verified Local Guide • 2 months ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" style="z-index: 5;">
+          <div class="google-badge-header">
+            <div class="google-badge"><i class="fa-brands fa-google"></i> Google Review</div>
+            <div class="star-rating">★★★★★</div>
+          </div>
+          <p class="review-text">"The Chef's Tasting Menu was an adventurous flavor bomb. Loved the golden smoked
+            saffron risotto and delicate gold leaf soufflé."</p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80"
+              alt="Priya Kapoor" class="reviewer-avatar">
+            <div class="reviewer-info">
+              <h4>Priya Kapoor</h4>
+              <p>Verified Google Reviewer • 5 days ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" style="z-index: 6;">
+          <div class="google-badge-header">
+            <div class="google-badge"><i class="fa-brands fa-google"></i> Google Review</div>
+            <div class="star-rating">★★★★★</div>
+          </div>
+          <p class="review-text">"Impeccable valet service, ambient jazz music, and gracious staff. Maison has set a
+            brand new benchmark for fine dining across Punjab."</p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80"
+              alt="Vikramaditya Singh" class="reviewer-avatar">
+            <div class="reviewer-info">
+              <h4>Vikramaditya Singh</h4>
+              <p>Local Executive • 1 week ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" style="z-index: 7;">
+          <div class="google-badge-header">
+            <div class="google-badge"><i class="fa-brands fa-google"></i> Google Review</div>
+            <div class="star-rating">★★★★★</div>
+          </div>
+          <p class="review-text">"Extremely clean, hygienic kitchen view, and friendly servers. The Chocolate Fondant
+            dessert with berry compote is worth every single calorie!"</p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
+              alt="Elena Rostova" class="reviewer-avatar">
+            <div class="reviewer-info">
+              <h4>Elena Rostova</h4>
+              <p>Travel & Food Blogger • 3 weeks ago</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" style="z-index: 8;">
+          <div class="google-badge-header">
+            <div class="google-badge"><i class="fa-brands fa-google"></i> Google Review</div>
+            <div class="star-rating">★★★★★</div>
+          </div>
+          <p class="review-text">"Hosting our company gala here was the best decision. Flawless execution from booking
+            to dessert. Kudos to the manager and culinary crew!"</p>
+          <div class="reviewer-profile">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80"
+              alt="Karan Johar" class="reviewer-avatar">
+            <div class="reviewer-info">
+              <h4>Karan Johar</h4>
+              <p>Verified Business Owner • 4 days ago</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="blogs-section" id="blogs">
+      <div class="section-header">
+        <span class="section-tag">05 — Culinary Insights</span>
+        <h2 class="section-title">Articles & Culinary Journal</h2>
+        <p class="section-desc">Explore stories from our kitchen, wine cellar pairings, and seasonal recipe
+          inspirations.</p>
+      </div>
+
+      <div class="blog-slider-container">
+        <div class="blog-track" id="blogTrack">
+          <!-- 10 Blog Cards dynamically loaded/rendered -->
+          <article class="blog-card">
+            <div class="blog-img-box">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
+                alt="Wine Pairing">
+              <span class="blog-category-tag">Sommelier Notes</span>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">September 28, 2026</p>
+              <h3 class="blog-title">The Art of Pairing Vintage Pinot Noir with Smoked Duck</h3>
+              <p class="blog-excerpt">Discover how balance, acidity, and tannic structures highlight roasted flavors in
+                classic French poultry dishes.</p>
+              <a href="javascript:void(0)" class="blog-read-btn"
+                onclick="openModal('The Art of Pairing Vintage Pinot Noir', 'Full article details regarding wine acidity, body, and ideal serving temperatures.')">Read
+                More Article <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80"
+                alt="Chef Craft">
+              <span class="blog-category-tag">Kitchen Secrets</span>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">September 20, 2026</p>
+              <h3 class="blog-title">Mastering 72-Hour Fermented Woodfire Pizza Dough</h3>
+              <p class="blog-excerpt">Chef Antoine breaks down the science of slow cold fermentation for airy crust
+                lightness and rich sourdough aroma.</p>
+              <a href="javascript:void(0)" class="blog-read-btn"
+                onclick="openModal('Mastering Fermented Dough', 'Learn about hydration ratios, zero flour selections, and high temperature woodfire technique.')">Read
+                More Article <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80"
+                alt="Seasonal Ingredients">
+              <span class="blog-category-tag">Farm To Table</span>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">September 12, 2026</p>
+              <h3 class="blog-title">Sourcing Organic Heirloom Vegetables in Punjab</h3>
+              <p class="blog-excerpt">Our partnership with local organic farms ensures zero-pesticide crispy produce
+                directly harvested every morning.</p>
+              <a href="javascript:void(0)" class="blog-read-btn"
+                onclick="openModal('Sourcing Organic Vegetables', 'Discover our sustainability commitments and local farmer support programs.')">Read
+                More Article <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80"
+                alt="Mixology">
+              <span class="blog-category-tag">Mixology</span>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">August 30, 2026</p>
+              <h3 class="blog-title">Crafting Botanical Mocktails with Smoked Rosemary</h3>
+              <p class="blog-excerpt">Non-alcoholic drinks elevated with house-distilled floral elixirs, fresh citrus
+                oils, and aromatic smoke clouds.</p>
+              <a href="javascript:void(0)" class="blog-read-btn"
+                onclick="openModal('Crafting Botanical Mocktails', 'Exploring zero-proof spirits and essential oil infusions for luxury drinks.')">Read
+                More Article <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=800&q=80"
+                alt="Pastry Art">
+              <span class="blog-category-tag">Patisserie</span>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">August 18, 2026</p>
+              <h3 class="blog-title">The Secret to Mirror Glaze Valrhona Chocolate Soufflé</h3>
+              <p class="blog-excerpt">Our Head Pastry Chef shares temperature precision techniques for achieving rising
+                soufflé crowns.</p>
+              <a href="javascript:void(0)" class="blog-read-btn"
+                onclick="openModal('Valrhona Chocolate Soufflé Secrets', 'A deep dive into French chocolate sourcing and egg white whisking chemistry.')">Read
+                More Article <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+                alt="Seafood Craft">
+              <span class="blog-category-tag">Seafood</span>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">August 05, 2026</p>
+              <h3 class="blog-title">Fresh Scallop Searing: Achieving Gold Crusts</h3>
+              <p class="blog-excerpt">High heat, clarified butter, and dry surface prep are key to restaurant-worthy
+                seared sea scallops.</p>
+              <a href="javascript:void(0)" class="blog-read-btn"
+                onclick="openModal('Fresh Scallop Searing Guide', 'Detailed steps to achieving sweet tender scallops without overcooking.')">Read
+                More Article <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+                alt="Interior Architecture">
+              <span class="blog-category-tag">Interior Design</span>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">July 22, 2026</p>
+              <h3 class="blog-title">Designing Dining Spaces for Ambient Warmth & Acoustics</h3>
+              <p class="blog-excerpt">How velvet textures, warm wood paneling, and indirect gold lighting create
+                intimate dining conversations.</p>
+              <a href="javascript:void(0)" class="blog-read-btn"
+                onclick="openModal('Designing Dining Spaces', 'Insights into luxury architectural acoustic dampening and warm color science.')">Read
+                More Article <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+                alt="Autumn Menu">
+              <span class="blog-category-tag">Seasonal Menu</span>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">July 10, 2026</p>
+              <h3 class="blog-title">Previewing Autumn Truffle & Wild Mushroom Menu</h3>
+              <p class="blog-excerpt">An exclusive sneak peek into our upcoming fall menu featuring fresh Italian Black
+                Truffles and Morels.</p>
+              <a href="javascript:void(0)" class="blog-read-btn"
+                onclick="openModal('Autumn Truffle Preview', 'Discover autumn dish additions with roasted chestnuts and truffle oil emulsion.')">Read
+                More Article <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80"
+                alt="Coffee Craft">
+              <span class="blog-category-tag">Artisan Roasts</span>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">June 28, 2026</p>
+              <h3 class="blog-title">Specialty Espresso Extractions & Dessert Pairings</h3>
+              <p class="blog-excerpt">Single-origin Ethiopian Yirgacheffe beans brewed to perfection to match Madagascar
+                vanilla bean gelato.</p>
+              <a href="javascript:void(0)" class="blog-read-btn"
+                onclick="openModal('Specialty Espresso Pairings', 'Exploring grind size, water pressure, and tasting notes of artisanal coffees.')">Read
+                More Article <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80"
+                alt="Hospitality">
+              <span class="blog-category-tag">Etiquette</span>
+            </div>
+            <div class="blog-content">
+              <p class="blog-date">June 15, 2026</p>
+              <h3 class="blog-title">The Art of Gracious Fine Dining Etiquette</h3>
+              <p class="blog-excerpt">A gentle guide to course utensil orders, napkin protocols, and communicating with
+                restaurant staff.</p>
+              <a href="javascript:void(0)" class="blog-read-btn"
+                onclick="openModal('Fine Dining Etiquette', 'Mastering the timeless art of table etiquette and wine glass holding posture.')">Read
+                More Article <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="blog-controls">
+          <button class="blog-btn" id="blogPrevBtn" aria-label="Previous Slide"><i
+              class="fa-solid fa-chevron-left"></i></button>
+          <button class="blog-btn" id="blogNextBtn" aria-label="Next Slide"><i
+              class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-header">
+        <span class="section-tag">06 — Reservations & Inquiries</span>
+        <h2 class="section-title">Reserve Your Table</h2>
+        <p class="section-desc">Experience royal French-Mediterranean dining. Reserve your table or private dining room
+          in Pathankot.</p>
+      </div>
+
+      <div class="contact-container">
+        <!-- Pathankot Google Map Location -->
+        <div class="map-box">
+          <iframe src="https://maps.google.com/maps?q=Pathankot,Punjab,India&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen="" loading="lazy" title="Maison Location Map Pathankot">
+          </iframe>
+        </div>
+
+        <!-- Reservation Form -->
+        <div class="contact-form-box">
+          <h3 class="form-heading">Table Reservation</h3>
+          <p class="form-sub">Please fill out the form below. Our maitre d' will confirm your seating within 30 minutes.
+          </p>
+
+          <form onsubmit="handleReservation(event)">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="tel" class="form-control" placeholder="Phone Number" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email Address" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <select class="form-control" required>
+                  <option value="" disabled selected>Select Guests</option>
+                  <option value="2">2 Guests (Couple)</option>
+                  <option value="4">4 Guests (Family)</option>
+                  <option value="6">6+ Guests (Private Suite)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="3"
+                placeholder="Special Requests (Dietary requirements, seating preference, anniversary celebrations)"></textarea>
+            </div>
+            <!-- Submit Button limited to max 250px as requested -->
+            <button type="submit" class="form-submit-btn">Confirm Reservation</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="restaurant.html" class="logo">MAISON<span>.</span></a>
+        <p>A haute gastronomy sanctuary combining seasonal organic ingredients, artisanal mixology, and timeless
+          French-Mediterranean hospitality in Pathankot.</p>
+
+        <!-- Social Icons with rounded transparent border & gold theme fill on hover -->
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" class="social-btn" aria-label="Facebook"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://whatsapp.com" target="_blank" class="social-btn" aria-label="WhatsApp"><i
+              class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+           <li><a href="index.html">Home Experience</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="#menu">Seasonal Menus</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#blogs">Our Blogs</a></li>
+                    <li><a href="#reservation">Quick Reservation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services Provided</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Private Dining Suites</a></li>
+          <li><a href="#services">Chef's Tasting Table</a></li>
+          <li><a href="#services">Corporate Gala Dinners</a></li>
+          <li><a href="#services">Artisanal Cocktail Lounge</a></li>
+          <li><a href="#services">Luxury Event Catering</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Location & Hours</h4>
+        <ul class="footer-links" style="color: rgba(255,255,255,0.7); line-height: 1.8;">
+          <li><i class="fa-solid fa-location-dot" style="color: var(--gold-primary); margin-right: 8px;"></i>
+            Pathankot, Punjab</li>
+          <li><i class="fa-solid fa-clock" style="color: var(--gold-primary); margin-right: 8px;"></i> Mon - Sun: 12:00
+            PM - 11:30 PM</li>
+          <li><i class="fa-solid fa-phone" style="color: var(--gold-primary); margin-right: 8px;"></i> +91 7858964251
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Giant Glowing Website Name -->
+    <h1 class="giant-glowing-title">MAISON</h1>
+
+    <!-- Copyright and credits -->
+    <div class="footer-bottom">
+      <p>© 2026 <strong>MAISON Restaurant</strong>. All rights reserved. Created by <strong><a
+            href="https://liin-coders.github.io/liinstudio/">LiinStudio</a> </strong>.</p>
+    </div>
+  </footer>
+
+  <!-- Article Detail Modal -->
+  <div class="modal-overlay" id="infoModal">
+    <div class="modal-card">
+      <i class="fa-solid fa-utensils"></i>
+      <h3 id="modalTitle">Article Details</h3>
+      <p id="modalBody">Description content goes here.</p>
+      <button class="modal-close-btn" onclick="closeModal()">Close Window</button>
+    </div>
+  </div>
+
+  <script>
+
+    // Menu Data Repository for 8 Categories
+    const menuData = {
+      starters: [
+        { title: "Pan-Seared Foie Gras", price: "₹1,250", desc: "Served on toasted brioche with caramelized figs and balsamico glaze.", img: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80", tags: ["French", "Duck", "Signature"] },
+        { title: "Truffled Burrata Salad", price: "₹890", desc: "Creamy artisanal burrata, heirloom tomatoes, pesto caviar, and micro basil.", img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80", tags: ["Vegetarian", "Italian Burrata"] },
+        { title: "Crispy Calamari Fritti", price: "₹750", desc: "Lightly battered squid tossed with smoked paprika, roasted garlic aioli.", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80", tags: ["Seafood", "Crispy"] },
+        { title: "French Onion Soup", price: "₹650", desc: "Classic caramelized onion broth crowned with aged Gruyère cheese croûton.", img: "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=600&q=80", tags: ["Soup", "Gruyere"] },
+        { title: "Pan-Seared Foie Gras", price: "₹1,250", desc: "Served on toasted brioche with caramelized figs and balsamico glaze.", img: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80", tags: ["French", "Duck", "Signature"] },
+        { title: "Truffled Burrata Salad", price: "₹890", desc: "Creamy artisanal burrata, heirloom tomatoes, pesto caviar, and micro basil.", img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80", tags: ["Vegetarian", "Italian Burrata"] }
+      ],
+      mains: [
+        { title: "Herb-Crusted Lamb Rack", price: "₹2,100", desc: "Australian lamb cutlets served with rosemary au jus and truffle potato puree.", img: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&q=80", tags: ["Chef Specialty", "Australian Lamb"] },
+        { title: "Grilled Wagyu Ribeye", price: "₹3,200", desc: "A5 Wagyu beef steak accompanied by bone marrow butter and roasted asparagus.", img: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80", tags: ["A5 Wagyu", "Prime Steak"] },
+        { title: "Pan-Roast Corn-Fed Chicken", price: "₹1,450", desc: "Free-range chicken breast served over saffron velouté and wild chanterelles.", img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80", tags: ["Organic", "French"] },
+        { title: "Wild Mushroom Wellington", price: "₹1,200", desc: "Flaky puff pastry stuffed with porcini mushrooms, spinach, and truffle paste.", img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80", tags: ["Vegetarian", "Truffle"] },
+        { title: "Herb-Crusted Lamb Rack", price: "₹2,100", desc: "Australian lamb cutlets served with rosemary au jus and truffle potato puree.", img: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&q=80", tags: ["Chef Specialty", "Australian Lamb"] },
+        { title: "Grilled Wagyu Ribeye", price: "₹3,200", desc: "A5 Wagyu beef steak accompanied by bone marrow butter and roasted asparagus.", img: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80", tags: ["A5 Wagyu", "Prime Steak"] }
+      ],
+      pizza: [
+        { title: "Truffle & Prosciutto Woodfire", price: "₹1,150", desc: "San Marzano sauce, fresh mozzarella, black truffle oil, and Parma ham.", img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80", tags: ["Woodfire", "Truffle Oil"] },
+        { title: "Classic Margherita DOC", price: "₹850", desc: "Buffalo mozzarella, San Marzano tomato sauce, fresh basil, extra virgin olive oil.", img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80", tags: ["Vegetarian", "Napoli Style"] },
+        { title: "Quattro Formaggi Supreme", price: "₹1,050", desc: "Gorgonzola piccante, fontina, provolone, mozzarella, and smoked honey drizzle.", img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80", tags: ["4 Cheese", "Gorgonzola"] },
+        { title: "Diablo Spicy Pepperoni", price: "₹1,100", desc: "Artisanal pepperoni, spicy nduja paste, red chili flakes, roasted peppers.", img: "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=600&q=80", tags: ["Spicy", "Nduja"] },
+        { title: "Truffle & Prosciutto Woodfire", price: "₹1,150", desc: "San Marzano sauce, fresh mozzarella, black truffle oil, and Parma ham.", img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80", tags: ["Woodfire", "Truffle Oil"] },
+        { title: "Classic Margherita DOC", price: "₹850", desc: "Buffalo mozzarella, San Marzano tomato sauce, fresh basil, extra virgin olive oil.", img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80", tags: ["Vegetarian", "Napoli Style"] }
+      ],
+      pasta: [
+        { title: "Fresh Tagliatelle al Tartufo", price: "₹1,350", desc: "Handmade tagliatelle pasta spun in a parmesan wheel with shaved fresh black truffle.", img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80", tags: ["Handmade", "Black Truffle"] },
+        { title: "Saffron & Lobster Risotto", price: "₹1,850", desc: "Carnaroli rice slow-cooked in lobster bisque infused with Iranian saffron threads.", img: "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=600&q=80", tags: ["Seafood", "Saffron"] },
+        { title: "Rigatoni alla Bolognese", price: "₹1,150", desc: "Slow-simmered prime beef ragù sauce topped with aged 36-month Parmigiano.", img: "https://images.unsplash.com/photo-1621996346565-e3d5d6281288?auto=format&fit=crop&w=600&q=80", tags: ["Classic Bolognese"] },
+        { title: "Spinach & Ricotta Ravioli", price: "₹980", desc: "Handmade ravioli cushions in sage brown butter sauce with toasted pine nuts.", img: "https://images.unsplash.com/photo-1587740896339-96a76170508d?auto=format&fit=crop&w=600&q=80", tags: ["Vegetarian", "Pine Nuts"] },
+        { title: "Fresh Tagliatelle al Tartufo", price: "₹1,350", desc: "Handmade tagliatelle pasta spun in a parmesan wheel with shaved fresh black truffle.", img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80", tags: ["Handmade", "Black Truffle"] },
+        { title: "Saffron & Lobster Risotto", price: "₹1,850", desc: "Carnaroli rice slow-cooked in lobster bisque infused with Iranian saffron threads.", img: "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=600&q=80", tags: ["Seafood", "Saffron"] }
+      ],
+      seafood: [
+        { title: "Pan-Seared Chilean Sea Bass", price: "₹2,400", desc: "Served on citrus beurre blanc with charred leeks and baby heirloom vegetables.", img: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80", tags: ["Wild Caught", "Beurre Blanc"] },
+        { title: "Grilled Jumbo King Prawns", price: "₹1,950", desc: "Marinated with garlic, herbs, white wine sauce, served with wild rice pilaf.", img: "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=600&q=80", tags: ["Garlic Butter", "Jumbo Prawns"] },
+        { title: "Atlantic Salmon Fillet", price: "₹1,800", desc: "Crispy skin salmon cooked medium-rare over pea puree and tarragon foam.", img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80", tags: ["Omega-3", "Pan Roasted"] },
+        { title: "Oysters Rockefeller", price: "₹1,600", desc: "Six fresh oysters baked with spinach, herbs, breadcrumbs, and Pernod liqueur.", img: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80", tags: ["Fresh Oysters", "Pernod"] },
+        { title: "Pan-Seared Chilean Sea Bass", price: "₹2,400", desc: "Served on citrus beurre blanc with charred leeks and baby heirloom vegetables.", img: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80", tags: ["Wild Caught", "Beurre Blanc"] },
+        { title: "Grilled Jumbo King Prawns", price: "₹1,950", desc: "Marinated with garlic, herbs, white wine sauce, served with wild rice pilaf.", img: "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=600&q=80", tags: ["Garlic Butter", "Jumbo Prawns"] }
+      ],
+      desserts: [
+        { title: "Golden Valrhona Soufflé", price: "₹750", desc: "Hot dark chocolate soufflé centered with melted praline and 24k edible gold leaf.", img: "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=600&q=80", tags: ["24k Gold", "Valrhona"] },
+        { title: "Madagascar Vanilla Crème Brûlée", price: "₹600", desc: "Rich custard with a brittle burnt sugar crust and fresh raspberries.", img: "https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=600&q=80", tags: ["French Classic", "Vanilla"] },
+        { title: "Deconstructed Tiramisu", price: "₹650", desc: "Espresso-soaked ladyfingers, mascarpone cream mousse, and cocoa dust.", img: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=600&q=80", tags: ["Espresso", "Mascarpone"] },
+        { title: "Artisanal Gelato Trio", price: "₹500", desc: "Selection of Sicilian Pistachio, Roasted Hazelnut, and Dark Chocolate gelato.", img: "https://images.unsplash.com/photo-1560008581-09826d1de69e?auto=format&fit=crop&w=600&q=80", tags: ["Gluten Free", "Housemade"] },
+        { title: "Golden Valrhona Soufflé", price: "₹750", desc: "Hot dark chocolate soufflé centered with melted praline and 24k edible gold leaf.", img: "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=600&q=80", tags: ["24k Gold", "Valrhona"] },
+        { title: "Madagascar Vanilla Crème Brûlée", price: "₹600", desc: "Rich custard with a brittle burnt sugar crust and fresh raspberries.", img: "https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=600&q=80", tags: ["French Classic", "Vanilla"] }
+      ],
+      beverages: [
+        { title: "Smoked Old Fashioned", price: "₹850", desc: "Bourbon, Angostura bitters, orange peel infused with hickory wood smoke.", img: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80", tags: ["Bourbon", "Signature Cocktail"] },
+        { title: "French Rose Champagne", price: "₹1,400", desc: "Chilled glass of vintage Moët & Chandon Rosé Imperial.", img: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80", tags: ["Imported", "Champagne"] },
+        { title: "Botanical Lavender Fizz", price: "₹550", desc: "Zero-proof beverage crafted with lavender elixir, fresh lemon juice, sparkling tonic.", img: "https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=600&q=80", tags: ["Mocktail", "Zero Proof"] },
+        { title: "Ethiopian Single Origin Espresso", price: "₹350", desc: "Double shot espresso with fruity aromas and velvety crema.", img: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80", tags: ["Specialty Roast"] },
+        { title: "Smoked Old Fashioned", price: "₹850", desc: "Bourbon, Angostura bitters, orange peel infused with hickory wood smoke.", img: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80", tags: ["Bourbon", "Signature Cocktail"] },
+        { title: "French Rose Champagne", price: "₹1,400", desc: "Chilled glass of vintage Moët & Chandon Rosé Imperial.", img: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80", tags: ["Imported", "Champagne"] }
+      ],
+      specials: [
+        { title: "Chef Antoine's Tasting Menu", price: "₹4,500", desc: "Seven-course culinary showcase featuring seasonal luxury ingredients and surprises.", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80", tags: ["7-Course", "Exclusive"] },
+        { title: "Black Caviar & Blinis", price: "₹3,800", desc: "30g Royal Ossetra Caviar served with warm buckwheat blinis and crème fraîche.", img: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80", tags: ["Royal Ossetra", "Delicacy"] },
+        { title: "Slow-Braised Veal Shank", price: "₹2,600", desc: "Ossobuco style veal cooked for 12 hours with bone marrow and saffron risottino.", img: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80", tags: ["Slow Cooked", "Italian"] },
+        { title: "Gold Leaf Opera Cake", price: "₹950", desc: "Almond sponge layered with ganache, coffee buttercream, wrapped in gold foil.", img: "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=600&q=80", tags: ["24k Gold", "French Pastry"] },
+        { title: "Chef Antoine's Tasting Menu", price: "₹4,500", desc: "Seven-course culinary showcase featuring seasonal luxury ingredients and surprises.", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80", tags: ["7-Course", "Exclusive"] },
+        { title: "Black Caviar & Blinis", price: "₹3,800", desc: "30g Royal Ossetra Caviar served with warm buckwheat blinis and crème fraîche.", img: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80", tags: ["Royal Ossetra", "Delicacy"] }
+      ]
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

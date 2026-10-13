@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAISON Restaurant — Premier Culinary Services</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="servicestyle.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#C7A875',
+                        'gold-dark': '#A88348',
+                        linen: '#F4F1E9',
+                        charcoal: '#151713',
+                        champagne: '#EAE5D8',
+                        'warm-gray': '#2A2A28'
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-charcoal text-slate-800 font-sans antialiased overflow-x-hidden">
+
+    <!-- Floating Header Navigation -->
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar">
+           <a href="index.html" class="logo">MAISON<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="about.html" class="nav-link">About us</a>
+                <a href="#menu" class="nav-link">Our Menus</a>
+                <a href="#blogs" class="nav-link">Blogs</a>
+                <a href="#reservation" class="nav-cta">Reservation ↗</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- STICKY HERO SECTION (Dynamic Zoom Shrink Effect) -->
+    <div id="hero-section" class="relative h-[180vh] w-full">
+        <!-- Sticky viewport container -->
+        <div class="sticky top-0  h-screen w-full overflow-hidden flex flex-col items-center justify-center">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2000&auto=format&fit=crop"
+                    alt="MAISON Restaurant Ambience"
+                    class="w-full h-full object-cover filter brightness-[0.38] scale-105 transform">
+                <div class="absolute inset-0 bg-gradient-to-b from-charcoal/80 via-transparent to-linen"></div>
+            </div>
+
+            <!-- Animated Scalable Center Brand Text -->
+            <div id="hero-content" class="relative z-10 text-center px-4 transition-transform ease-out duration-75">
+                <span id="hero-sub"
+                    class="block text-gold uppercase tracking-[0.4em] text-xs sm:text-sm font-semibold mb-4 transition-opacity duration-300">
+                    Bespoke Culinary Excellence
+                </span>
+
+                <h1 id="hero-text"
+                    class="text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] font-black font-cinzel tracking-widest text-white uppercase leading-none drop-shadow-2xl">
+                    MAISON<span class="text-gold">.</span>
+                </h1>
+
+                <p id="hero-desc"
+                    class="mt-6 text-gray-300 text-sm sm:text-base max-w-lg mx-auto font-light tracking-wide transition-opacity duration-300">
+                    Discover our suite of tailored dining experiences, private hostings, and luxury culinary offerings.
+                </p>
+
+                <!-- Scroll Down Indicator -->
+                <div class="mt-10 flex flex-col items-center gap-2 animate-bounce">
+                    <span class="text-[10px] uppercase tracking-widest text-gold/80 font-semibold">Scroll to
+                        Explore</span>
+                    <i class="fa-solid fa-chevron-down text-gold text-xs"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 01 — Dine-In Experience -->
+    <section id="sec-01" class="relative z-20 bg-linen py-20 px-4 sm:px-8 lg:px-16 transition-colors duration-500">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Section Header -->
+            <div
+                class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-gray-300/70 pb-6 gap-4">
+                <div>
+                    <div class="text-5xl md:text-6xl font-bold font-sans text-gold/90 mb-2">01</div>
+                    <h2 class="text-3xl md:text-5xl font-cinzel font-bold text-charcoal">Dine-In Experience</h2>
+                </div>
+                <p class="text-gray-600 max-w-md text-sm md:text-base font-light">
+                    Immerse yourself in sensory gastronomy where modern sophistication meets warm epicurean hospitality.
+                </p>
+            </div>
+
+            <!-- Info & Badges Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+
+                <!-- Atmosphere Box -->
+                <div
+                    class="bg-white/80 backdrop-blur rounded-2xl p-8 border border-white shadow-lg hover:shadow-xl transition-shadow">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-cinzel font-semibold text-charcoal mb-4">Atmosphere</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-full text-xs font-semibold bg-charcoal text-white">Fine
+                            Dining</span>
+                        <span
+                            class="px-3 py-1.5 rounded-full text-xs font-semibold bg-linen text-charcoal border border-gold/30">Casual
+                            Elegance</span>
+                        <span
+                            class="px-3 py-1.5 rounded-full text-xs font-semibold bg-linen text-charcoal border border-gold/30">Cozy
+                            Lounges</span>
+                        <span
+                            class="px-3 py-1.5 rounded-full text-xs font-semibold bg-linen text-charcoal border border-gold/30">Family-Friendly</span>
+                    </div>
+                </div>
+
+                <!-- Special Features -->
+                <div
+                    class="bg-white/80 backdrop-blur rounded-2xl p-8 border border-white shadow-lg hover:shadow-xl transition-shadow">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-cinzel font-semibold text-charcoal mb-4">Special Features</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-gold text-xs"></i>
+                            <span>Heated Garden & Outdoor Patio</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-gold text-xs"></i>
+                            <span>Interactive Open Kitchen View</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-gold text-xs"></i>
+                            <span>Full Artisanal Cocktail & Wine Bar</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Operating Hours & Live Status -->
+                <div
+                    class="bg-white/80 backdrop-blur rounded-2xl p-8 border border-white shadow-lg hover:shadow-xl transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-xl">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <span
+                                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800 border border-emerald-200">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Open Today
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-cinzel font-semibold text-charcoal mb-2">Operating Hours</h3>
+                        <p class="text-gray-700 text-sm font-medium">Monday – Sunday</p>
+                        <p class="text-2xl font-bold font-cinzel text-gold mt-1">11:00 AM – 10:00 PM</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gray-100 text-xs text-gray-500">
+                        Kitchen orders close 45 mins prior to closing.
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Visual Showcase Grid & CTA -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="group relative h-72 rounded-2xl overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800&auto=format&fit=crop"
+                        alt="Main Dining Room"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
+                        <span class="text-white font-cinzel font-semibold text-lg">Main Dining Salon</span>
+                    </div>
+                </div>
+                <div class="group relative h-72 rounded-2xl overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop"
+                        alt="Open Kitchen View"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
+                        <span class="text-white font-cinzel font-semibold text-lg">Open Kitchen View</span>
+                    </div>
+                </div>
+                <div class="group relative h-72 rounded-2xl overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800&auto=format&fit=crop"
+                        alt="Outdoor Patio"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
+                        <span class="text-white font-cinzel font-semibold text-lg">Alfresco Outdoor Patio</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="text-center">
+                <button onclick="openModal('reservation-modal')"
+                    class="inline-flex items-center gap-3 bg-charcoal hover:bg-gold text-white hover:text-charcoal px-8 py-4 rounded-full font-semibold text-sm tracking-wider uppercase transition-all duration-300 shadow-xl group">
+                    <span>Reserve Table</span>
+                    <i
+                        class="fa-solid fa-arrow-up-right-from-square text-xs group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 02 — Takeout & Curbside Pickup -->
+    <section id="sec-02" class="relative z-20 bg-white py-20 px-4 sm:px-8 lg:px-16 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Section Header -->
+            <div
+                class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-gray-200 pb-6 gap-4">
+                <div>
+                    <div class="text-5xl md:text-6xl font-bold font-sans text-gold/90 mb-2">02</div>
+                    <h2 class="text-3xl md:text-5xl font-cinzel font-bold text-charcoal">Takeout & Curbside Pickup</h2>
+                </div>
+                <p class="text-gray-600 max-w-md text-sm md:text-base font-light">
+                    Savor MAISON’s signature creations at home, packaged with pristine heat-retentive luxury
+                    presentation.
+                </p>
+            </div>
+
+            <!-- Service Feature Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+
+                <div class="p-8 rounded-2xl bg-linen/50 border border-linen hover:border-gold/40 transition-all group">
+                    <div
+                        class="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center text-gold text-2xl mb-6 group-hover:bg-gold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-cinzel font-bold text-lg text-charcoal mb-2">Rapid Prep</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Precision timing ensures your meals are cooked fresh upon your scheduled pickup time.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-linen/50 border border-linen hover:border-gold/40 transition-all group">
+                    <div
+                        class="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center text-gold text-2xl mb-6 group-hover:bg-gold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h3 class="font-cinzel font-bold text-lg text-charcoal mb-2">Eco Luxury Packaging</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        100% biodegradable thermal insulated boxes that preserve temperature and plate aesthetics.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-linen/50 border border-linen hover:border-gold/40 transition-all group">
+                    <div
+                        class="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center text-gold text-2xl mb-6 group-hover:bg-gold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <h3 class="font-cinzel font-bold text-lg text-charcoal mb-2">Curbside Valet</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Park in our designated bay; our concierge delivers directly to your vehicle window.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-linen/50 border border-linen hover:border-gold/40 transition-all group">
+                    <div
+                        class="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center text-gold text-2xl mb-6 group-hover:bg-gold group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3 class="font-cinzel font-bold text-lg text-charcoal mb-2">Real-Time SMS Alert</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Receive instant status notifications from kitchen prep to curbside handoff.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Banner & Order CTA -->
+            <div
+                class="relative rounded-3xl overflow-hidden bg-charcoal text-white p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="relative z-10 max-w-xl">
+                    <span class="text-gold text-xs font-semibold uppercase tracking-widest block mb-2">Gourmet
+                        To-Go</span>
+                    <h3 class="text-2xl md:text-4xl font-cinzel font-bold mb-4">Craving MAISON at your doorstep?</h3>
+                    <p class="text-gray-300 text-sm font-light leading-relaxed">
+                        Select from our complete gourmet takeaway menu including curated sommelier-selected pairings.
+                    </p>
+                </div>
+                <div class="relative z-10 shrink-0">
+                    <button onclick="openModal('takeout-modal')"
+                        class="bg-gold hover:bg-gold-dark text-charcoal font-semibold text-sm uppercase tracking-wider px-8 py-4 rounded-full transition-all shadow-xl hover:scale-105 inline-flex items-center gap-2">
+                        <span>Order Online for Pickup</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+                <!-- Decorative element -->
+                <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-gold/10 rounded-full blur-3xl"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 03 — Private Events & Large Groups -->
+    <section id="sec-03"
+        class="relative z-20 bg-charcoal text-white py-24 px-4 sm:px-8 lg:px-16 border-t border-white/10">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Section Header -->
+            <div
+                class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-white/10 pb-6 gap-4">
+                <div>
+                    <div class="text-5xl md:text-6xl font-bold font-sans text-gold mb-2">03</div>
+                    <h2 class="text-3xl md:text-5xl font-cinzel font-bold text-white">Private Events & Large Groups</h2>
+                </div>
+                <p class="text-gray-400 max-w-md text-sm md:text-base font-light">
+                    Host unforgettable corporate galas, intimate anniversaries, or wedding rehearsals with tailored
+                    dining suites.
+                </p>
+            </div>
+
+            <!-- Features / Tiers Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+
+                <!-- Card 1 -->
+                <div
+                    class="bg-warm-gray/60 rounded-2xl p-8 border border-white/10 hover:border-gold/50 transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-gold text-xs uppercase font-semibold tracking-widest block mb-2">Intimate
+                            Hosting</span>
+                        <h3 class="text-2xl font-cinzel font-bold text-white mb-4">The Cellar Salon</h3>
+                        <p class="text-gray-400 text-sm mb-6 font-light leading-relaxed">
+                            A private subterranean sanctuary enclosed by our vintage wine collection.
+                        </p>
+                        <ul class="space-y-3 text-xs text-gray-300 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-user-group text-gold"></i>
+                                Capacity: 10 – 25 Guests</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-wine-glass text-gold"></i>
+                                Dedicated Sommelier</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-list-check text-gold"></i> Custom
+                                5-Course Menu</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('private-inquiry-modal')"
+                        class="w-full py-3 rounded-xl border border-gold/40 text-gold hover:bg-gold hover:text-charcoal font-semibold text-xs uppercase tracking-wider transition-all">
+                        Inquire Salon
+                    </button>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-warm-gray/90 rounded-2xl p-8 border-2 border-gold/60 relative flex flex-col justify-between shadow-2xl scale-105 my-2 md:my-0">
+                    <span
+                        class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-charcoal text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-full">Most
+                        Popular</span>
+                    <div>
+                        <span class="text-gold text-xs uppercase font-semibold tracking-widest block mb-2">Full Dining
+                            Suite</span>
+                        <h3 class="text-2xl font-cinzel font-bold text-white mb-4">Grand Dining Hall</h3>
+                        <p class="text-gray-300 text-sm mb-6 font-light leading-relaxed">
+                            Exclusive buyout of our main dining hall for lavish corporate events or wedding receptions.
+                        </p>
+                        <ul class="space-y-3 text-xs text-gray-300 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-user-group text-gold"></i>
+                                Capacity: 50 – 150 Guests</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-sliders text-gold"></i>
+                                Personalized AV & Lighting</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-utensils text-gold"></i> Chef
+                                Executive Live Stations</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('private-inquiry-modal')"
+                        class="w-full py-3 rounded-xl bg-gold text-charcoal hover:bg-gold-dark font-semibold text-xs uppercase tracking-wider transition-all shadow-md">
+                        Inquire Full Buyout
+                    </button>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-warm-gray/60 rounded-2xl p-8 border border-white/10 hover:border-gold/50 transition-all flex flex-col justify-between">
+                    <div>
+                        <span class="text-gold text-xs uppercase font-semibold tracking-widest block mb-2">Outdoor
+                            Elegance</span>
+                        <h3 class="text-2xl font-cinzel font-bold text-white mb-4">Patio Terrace</h3>
+                        <p class="text-gray-400 text-sm mb-6 font-light leading-relaxed">
+                            Open-air garden environment featuring ambient string lighting and cocktail bar setups.
+                        </p>
+                        <ul class="space-y-3 text-xs text-gray-300 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-user-group text-gold"></i>
+                                Capacity: 30 – 80 Guests</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-cocktail text-gold"></i> Private
+                                Mixologist Bar</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-fire text-gold"></i> Outdoor
+                                Fireplace Lounge</li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('private-inquiry-modal')"
+                        class="w-full py-3 rounded-xl border border-gold/40 text-gold hover:bg-gold hover:text-charcoal font-semibold text-xs uppercase tracking-wider transition-all">
+                        Inquire Terrace
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Action CTA -->
+            <div class="text-center">
+                <button onclick="openModal('private-inquiry-modal')"
+                    class="inline-flex items-center gap-3 bg-gold hover:bg-gold-dark text-charcoal px-9 py-4 rounded-full font-bold text-sm tracking-wider uppercase transition-all shadow-xl hover:scale-105">
+                    <span>Inquire Private Dining ↗</span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 04 — Visit or Contact Us -->
+    <section id="sec-04" class="relative z-20 bg-champagne py-20 px-4 sm:px-8 lg:px-16 text-charcoal">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Section Header -->
+            <div
+                class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-charcoal/10 pb-6 gap-4">
+                <div>
+                    <div class="text-5xl md:text-6xl font-bold font-sans text-gold-dark mb-2">04</div>
+                    <h2 class="text-3xl md:text-5xl font-cinzel font-bold text-charcoal">Visit or Contact Us</h2>
+                </div>
+                <p class="text-gray-700 max-w-md text-sm md:text-base font-light">
+                    We welcome your inquiries, table preferences, and feedback. Visit our flagship restaurant in
+                    Pathankot.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+                <!-- Contact Info & Map (Left 6 Cols) -->
+                <div class="lg:col-span-6 space-y-8">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-white/80 p-6 rounded-2xl border border-white shadow-sm">
+                            <i class="fa-solid fa-location-dot text-gold-dark text-2xl mb-3"></i>
+                            <h4 class="font-cinzel font-bold text-lg mb-1">Our Location</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                                Pathankot,punjab<br>Pathankot, Punjab 145001, India
+                            </p>
+                        </div>
+
+                        <div class="bg-white/80 p-6 rounded-2xl border border-white shadow-sm">
+                            <i class="fa-solid fa-phone text-gold-dark text-2xl mb-3"></i>
+                            <h4 class="font-cinzel font-bold text-lg mb-1">Direct Lines</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                                +91 7858964251<br>
+                                reservations@maison-restaurant.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Interactive Map -->
+                    <div class="rounded-2xl overflow-hidden shadow-lg border border-white h-72 w-full relative">
+                        <iframe title="MAISON Restaurant Pathankot Location"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3376.123!2d75.6421!3d32.2742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDE2JzI3LjEiTiA3NcKwMzgnMzEuNiJF!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin"
+                            class="w-full h-full border-0 filter grayscale contrast-125 opacity-90 hover:grayscale-0 transition-all duration-500"
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <!-- Direct Inquiry Form (Right 6 Cols) -->
+                <div class="lg:col-span-6 bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-white">
+                    <h3 class="text-2xl font-cinzel font-bold text-charcoal mb-2">Send a Direct Message</h3>
+                    <p class="text-xs text-gray-500 mb-6">Our concierge team responds within 2 business hours.</p>
+
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Your
+                                    Name</label>
+                                <input type="text" required placeholder="John Doe"
+                                    class="w-full px-4 py-3 rounded-xl bg-linen/50 border border-gray-200 text-sm focus:outline-none focus:border-gold">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Phone
+                                    Number</label>
+                                <input type="tel" required placeholder="+91 98765 43210"
+                                    class="w-full px-4 py-3 rounded-xl bg-linen/50 border border-gray-200 text-sm focus:outline-none focus:border-gold">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Email
+                                Address</label>
+                            <input type="email" required placeholder="john@example.com"
+                                class="w-full px-4 py-3 rounded-xl bg-linen/50 border border-gray-200 text-sm focus:outline-none focus:border-gold">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Service
+                                Interest</label>
+                            <select
+                                class="w-full px-4 py-3 rounded-xl bg-linen/50 border border-gray-200 text-sm focus:outline-none focus:border-gold">
+                                <option>Dine-In Reservation Query</option>
+                                <option>Takeout & Curbside Pickup Order</option>
+                                <option>Private Events / Large Group Buyout</option>
+                                <option>Chef Special Catering</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Message</label>
+                            <textarea rows="3" required placeholder="Tell us about your requirements..."
+                                class="w-full px-4 py-3 rounded-xl bg-linen/50 border border-gray-200 text-sm focus:outline-none focus:border-gold"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full py-4 bg-charcoal hover:bg-gold hover:text-charcoal text-white font-bold text-xs uppercase tracking-widest rounded-xl transition-all shadow-md">
+                            Send Inquiry ↗
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="restaurant.html" class="logo">MAISON<span>.</span></a>
+                <p>A haute gastronomy sanctuary combining seasonal organic ingredients, artisanal mixology, and timeless
+                    French-Mediterranean hospitality in Pathankot.</p>
+
+                <!-- Social Icons with rounded transparent border & gold theme fill on hover -->
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" class="social-btn" aria-label="Facebook"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://whatsapp.com" target="_blank" class="social-btn" aria-label="WhatsApp"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                     <li><a href="index.html">Home Experience</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="#menu">Seasonal Menus</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#blogs">Our Blogs</a></li>
+                    <li><a href="#reservation">Quick Reservation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Services Provided</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">Private Dining Suites</a></li>
+                    <li><a href="#services">Chef's Tasting Table</a></li>
+                    <li><a href="#services">Corporate Gala Dinners</a></li>
+                    <li><a href="#services">Artisanal Cocktail Lounge</a></li>
+                    <li><a href="#services">Luxury Event Catering</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Location & Hours</h4>
+                <ul class="footer-links" style="color: rgba(255,255,255,0.7); line-height: 1.8;">
+                    <li><i class="fa-solid fa-location-dot" style="color: var(--gold-primary); margin-right: 8px;"></i>
+                        Pathankot, Punjab</li>
+                    <li><i class="fa-solid fa-clock" style="color: var(--gold-primary); margin-right: 8px;"></i> Mon -
+                        Sun: 12:00
+                        PM - 11:30 PM</li>
+                    <li><i class="fa-solid fa-phone" style="color: var(--gold-primary); margin-right: 8px;"></i> +91
+                        7858964251
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Giant Glowing Website Name -->
+        <h1 class="giant-glowing-title">MAISON.</h1>
+
+        <!-- Copyright and credits -->
+        <div class="footer-bottom">
+            <p>© 2026 <strong>MAISON Restaurant</strong>. All rights reserved. Created by <strong><a
+                        href="https://liin-coders.github.io/liinstudio/">LiinStudio</a></strong>.</p>
+        </div>
+    </footer>
+
+    <!-- RESERVATION MODAL -->
+    <div id="reservation-modal"
+        class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-8 relative shadow-2xl animate-fade-in">
+            <button onclick="closeModal('reservation-modal')"
+                class="absolute top-6 right-6 text-gray-400 hover:text-charcoal text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="text-2xl font-cinzel font-bold text-charcoal mb-1">Reserve Your Table</h3>
+            <p class="text-xs text-gray-500 mb-6">Select your preferred date, time, and party size.</p>
+
+            <form onsubmit="handleModalSubmit(event, 'reservation-modal')" class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Date</label>
+                        <input type="date" required
+                            class="w-full p-3 rounded-xl bg-linen/50 border border-gray-200 text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Time</label>
+                        <select required class="w-full p-3 rounded-xl bg-linen/50 border border-gray-200 text-sm">
+                            <option>12:00 PM (Lunch)</option>
+                            <option>02:00 PM (Lunch)</option>
+                            <option>07:00 PM (Dinner)</option>
+                            <option>08:30 PM (Dinner)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Guests</label>
+                        <select required class="w-full p-3 rounded-xl bg-linen/50 border border-gray-200 text-sm">
+                            <option>2 Guests</option>
+                            <option>4 Guests</option>
+                            <option>6 Guests</option>
+                            <option>8+ Guests</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Seating Area</label>
+                        <select class="w-full p-3 rounded-xl bg-linen/50 border border-gray-200 text-sm">
+                            <option>Main Dining Hall</option>
+                            <option>Outdoor Patio</option>
+                            <option>Open Kitchen View</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Full Name</label>
+                    <input type="text" required placeholder="John Doe"
+                        class="w-full p-3 rounded-xl bg-linen/50 border border-gray-200 text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Contact Phone</label>
+                    <input type="tel" required placeholder="+91 98765 43210"
+                        class="w-full p-3 rounded-xl bg-linen/50 border border-gray-200 text-sm">
+                </div>
+
+                <button type="submit"
+                    class="w-full py-4 bg-gold hover:bg-gold-dark text-charcoal font-bold text-xs uppercase tracking-widest rounded-xl transition-all shadow-md mt-2">
+                    Confirm Reservation Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TAKEOUT MODAL -->
+    <div id="takeout-modal"
+        class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-8 relative shadow-2xl">
+            <button onclick="closeModal('takeout-modal')"
+                class="absolute top-6 right-6 text-gray-400 hover:text-charcoal text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="text-2xl font-cinzel font-bold text-charcoal mb-1">Order Takeout / Curbside</h3>
+            <p class="text-xs text-gray-500 mb-6">Specify your takeout preferences and estimated arrival.</p>
+
+            <form onsubmit="handleModalSubmit(event, 'takeout-modal')" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Pickup Method</label>
+                    <div class="grid grid-cols-2 gap-3">
+                        <label class="p-3 border rounded-xl flex items-center gap-2 cursor-pointer bg-linen/30 text-xs">
+                            <input type="radio" name="pickup_type" checked class="accent-gold">
+                            <span>Curbside Valet</span>
+                        </label>
+                        <label class="p-3 border rounded-xl flex items-center gap-2 cursor-pointer bg-linen/30 text-xs">
+                            <input type="radio" name="pickup_type" class="accent-gold">
+                            <span>Counter Pickup</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Estimated Pickup
+                        Time</label>
+                    <input type="time" required
+                        class="w-full p-3 rounded-xl bg-linen/50 border border-gray-200 text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Order Notes / Dietary
+                        Items</label>
+                    <textarea rows="2" placeholder="Item codes or special dietary instructions..."
+                        class="w-full p-3 rounded-xl bg-linen/50 border border-gray-200 text-sm"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full py-4 bg-charcoal hover:bg-gold hover:text-charcoal text-white font-bold text-xs uppercase tracking-widest rounded-xl transition-all shadow-md">
+                    Proceed to Online Menu ↗
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- PRIVATE INQUIRY MODAL -->
+    <div id="private-inquiry-modal"
+        class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-8 relative shadow-2xl">
+            <button onclick="closeModal('private-inquiry-modal')"
+                class="absolute top-6 right-6 text-gray-400 hover:text-charcoal text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="text-2xl font-cinzel font-bold text-charcoal mb-1">Private Dining Inquiry</h3>
+            <p class="text-xs text-gray-500 mb-6">Our event director will design your custom banquet plan.</p>
+
+            <form onsubmit="handleModalSubmit(event, 'private-inquiry-modal')" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Event Type</label>
+                    <select required class="w-full p-3 rounded-xl bg-linen/50 border border-gray-200 text-sm">
+                        <option>The Cellar Salon (10-25 Guests)</option>
+                        <option>Grand Dining Hall Buyout (50-150 Guests)</option>
+                        <option>Patio Terrace Reception (30-80 Guests)</option>
+                    </select>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Event Date</label>
+                        <input type="date" required
+                            class="w-full p-3 rounded-xl bg-linen/50 border border-gray-200 text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Approx Guests</label>
+                        <input type="number" placeholder="25" min="5" max="200" required
+                            class="w-full p-3 rounded-xl bg-linen/50 border border-gray-200 text-sm">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Contact Name & Phone</label>
+                    <input type="text" required placeholder="Jane Doe - +91 98765 00000"
+                        class="w-full p-3 rounded-xl bg-linen/50 border border-gray-200 text-sm">
+                </div>
+
+                <button type="submit"
+                    class="w-full py-4 bg-gold hover:bg-gold-dark text-charcoal font-bold text-xs uppercase tracking-widest rounded-xl transition-all shadow-md">
+                    Submit Private Event Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification Toast Notification Container -->
+    <div id="toast-notification"
+        class="fixed bottom-6 right-6 z-50 hidden bg-charcoal text-gold px-6 py-4 rounded-2xl shadow-2xl border border-gold/30 flex items-center gap-3">
+        <i class="fa-solid fa-circle-check text-xl"></i>
+        <span id="toast-message" class="text-sm font-medium">Request submitted successfully!</span>
+    </div>
+
+    <script src="service_style.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MAISON - Haute Gastronomy</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            DEFAULT: '#C5A059',
+                            light: '#E6CA85',
+                            dark: '#9A7730',
+                        },
+                        linen: '#F9F6F0',
+                        sage: '#F1F4EE',
+                        champagne: '#FAF6F0',
+                        sand: '#F5EFE6',
+                        roseCashmere: '#FAF3EE',
+                        charcoal: '#1A1817',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- stylesheet css-->
+    <link rel="stylesheet" href="aboutstyle.css">
+
+</head>
+
+<body class="bg-fixed-ambient antialiased text-gray-800 selection:bg-gold selection:text-white relative min-h-screen">
+
+    <!-- FLOATING LUXURY GLASSMORPHISM HEADER -->
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar">
+            <a href="index.html" class="logo">MAISON<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link active">About us</a>
+                <a href="#menu" class="nav-link">Our Menus</a>
+                <a href="#blogs" class="nav-link">Blogs</a>
+                <a href="#reservation" class="nav-cta">Reservation ↗</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO INTRO BANNER -->
+    <section class="pt-36 pb-20 px-4 sm:px-8 max-w-7xl mx-auto text-center relative">
+        <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full backdrop-blur-md bg-white/10 border border-gold/30 text-gold text-xs font-semibold tracking-widest uppercase mb-6 animate-pulse-glow">
+            <i class="fa-solid fa-crown text-[10px]"></i>
+            <span>Est. 2018 &bull; Haute Gastronomy</span>
+        </div>
+        <h1
+            class="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white font-normal tracking-tight leading-tight max-w-5xl mx-auto">
+            Where Culinary Artistry Meets <span class="text-gold-gradient italic font-serif font-light">Architectural
+                Soul</span>
+        </h1>
+        <p class="mt-6 text-stone-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed font-light">
+            Welcome to MAISON. An immersive sanctuary created for discerning palates, where multisensory epicurean
+            experiences harmonize with timeless sanctuary design.
+        </p>
+
+        <!-- Down Arrow Indicator -->
+        <div class="mt-12 flex justify-center">
+            <!-- <a href="#section-genesis"
+                class="w-12 h-12 rounded-full border border-gold/40 flex items-center justify-center text-gold hover:bg-gold hover:text-stone-900 transition-all duration-300 animate-bounce">
+                <i class="fa-solid fa-arrow-down text-sm"></i>
+            </a> -->
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT CONTAINER WITH FLOATING LIGHT SECTIONS -->
+    <main class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 space-y-16 pb-24">
+
+        <!-- ==========================================
+             SECTION 01: THE GENESIS & CULINARY ETHOS
+             Background Color: Soft Warm Linen (#F9F6F0)
+             Shape: Asymmetrical Arch & Organic Blob Frame
+             ========================================== -->
+        <section id="section-genesis"
+            class="rounded-3xl bg-linen/95 backdrop-blur-xl p-8 sm:p-12 lg:p-16 shadow-2xl border border-stone-200/80 transition-all duration-500 hover:shadow-gold/10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+                <!-- Left Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="text-xs font-bold tracking-widest text-gold uppercase bg-gold/10 px-3 py-1 rounded-md">01</span>
+                        <span class="h-px w-12 bg-gold/40"></span>
+                        <span class="text-xs uppercase tracking-widest font-semibold text-stone-500">Origin &
+                            Vision</span>
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-5xl text-stone-900 leading-tight">
+                        The Genesis & Culinary <span class="text-gold-gradient italic font-normal">Ethos</span>
+                    </h2>
+
+                    <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
+                        Founded with a singular vision to redefine fine dining, MAISON represents the union of classic
+                        European technique with bold, forward-looking flavor profiles. What began as an intimate hearth
+                        in 2018 has matured into an iconic epicurean landmark.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 pt-4 border-t border-stone-200">
+                        <div class="space-y-1">
+                            <span class="font-serif text-3xl font-bold text-stone-900">3 Star</span>
+                            <p class="text-xs text-stone-500 uppercase tracking-wider font-medium">Gastronomic
+                                Philosophy</p>
+                        </div>
+                        <div class="space-y-1">
+                            <span class="font-serif text-3xl font-bold text-stone-900">100%</span>
+                            <p class="text-xs text-stone-500 uppercase tracking-wider font-medium">Artisanal
+                                Craftsmanship</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="#section-artisans"
+                            class="inline-flex items-center gap-3 text-xs uppercase tracking-widest font-bold text-stone-900 hover:text-gold transition-colors">
+                            <span>Discover Our Culinary Masters</span>
+                            <i class="fa-solid fa-long-arrow-right text-gold"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Unique Image Frame: Asymmetrical Arch & Organic Blob -->
+                <div class="lg:col-span-6 relative flex justify-center items-center">
+                    <!-- Floating Gold Accent Decorative Rings -->
+                    <div
+                        class="absolute -top-6 -right-6 w-32 h-32 rounded-full border-2 border-gold/30 animate-float-slow -z-0">
+                    </div>
+                    <div class="absolute -bottom-8 -left-8 w-40 h-40 rounded-full border border-gold/20 -z-0"></div>
+
+                    <!-- Organic Background Blob Accent -->
+                    <div class="absolute inset-0 bg-amber-100/60 rounded-3xl transform rotate-3 scale-95 -z-10 blur-sm">
+                    </div>
+
+                    <!-- Main Image Frame with Asymmetrical Arch Cutout -->
+                    <div
+                        class="relative z-10 w-full overflow-hidden shape-arch-organic border-4 border-white shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=1000"
+                            alt="MAISON Culinary Genesis"
+                            class="w-full h-[420px] sm:h-[500px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                            onerror="this.src='https://placehold.co/800x1000/F9F6F0/1A1817?text=MAISON+Culinary+Genesis'">
+
+                        <!-- Floating Glass Badge over image -->
+                        <div
+                            class="absolute bottom-6 left-8 right-20 backdrop-blur-md bg-stone-900/80 text-white p-4 rounded-2xl border border-gold/30 flex items-center justify-between">
+                            <div>
+                                <h4 class="font-serif text-sm font-semibold text-gold">The Kitchen Hearth</h4>
+                                <p class="text-xs text-stone-300 font-light">Where raw terroir turns into emotion</p>
+                            </div>
+                            <span
+                                class="w-10 h-10 rounded-full bg-gold/20 border border-gold/40 flex items-center justify-center text-gold">
+                                <i class="fa-solid fa-fire text-xs"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 02: MASTER ARTISANS & GASTRONOMY
+             Background Color: Gentle Sage Mist (#F1F4EE)
+             Shape: Angular Parallelogram Polyline Cutout Frame
+             ========================================== -->
+        <section id="section-artisans"
+            class="rounded-3xl bg-sage/95 backdrop-blur-xl p-8 sm:p-12 lg:p-16 shadow-2xl border border-stone-200/80 transition-all duration-500 hover:shadow-emerald-900/5">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+                <!-- Left Unique Image Frame: Angular Parallelogram -->
+                <div class="lg:col-span-6 order-2 lg:order-1 relative">
+                    <!-- Subtle Frame Border Offset -->
+                    <div class="absolute -inset-2 bg-emerald-900/10 clip-parallelogram transform -rotate-1 rounded-2xl">
+                    </div>
+
+                    <div class="relative z-10 clip-parallelogram overflow-hidden shadow-2xl bg-stone-900 group">
+                        <img id="artisanImage"
+                            src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=1000"
+                            alt="Chef Spotlight"
+                            class="w-full h-[450px] sm:h-[520px] object-cover group-hover:scale-105 transition-all duration-700"
+                            onerror="this.src='https://placehold.co/800x1000/F1F4EE/1A1817?text=MAISON+Executive+Chef'">
+
+                        <!-- Overlay Gradient -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent">
+                        </div>
+
+                        <!-- Caption -->
+                        <div class="absolute bottom-8 left-8 right-8 text-white space-y-1">
+                            <span class="text-xs uppercase tracking-widest text-gold font-bold"
+                                id="artisanRole">Executive Chef & Visionary</span>
+                            <h3 class="font-serif text-2xl font-bold" id="artisanName">Antoine De La Croix</h3>
+                            <p class="text-xs text-stone-300 font-light" id="artisanBio">"Precision is not an act; it is
+                                our second nature."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content & Interactive Artisan Selector -->
+                <div class="lg:col-span-6 order-1 lg:order-2 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="text-xs font-bold tracking-widest text-emerald-800 uppercase bg-emerald-100 px-3 py-1 rounded-md">02</span>
+                        <span class="h-px w-12 bg-emerald-800/30"></span>
+                        <span class="text-xs uppercase tracking-widest font-semibold text-stone-500">Virtuoso
+                            Team</span>
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-5xl text-stone-900 leading-tight">
+                        Master Artisans & <span class="text-gold-gradient italic font-normal">Gastronomy</span>
+                    </h2>
+
+                    <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
+                        Every plate served at MAISON is the culmination of hundreds of hours of creative trial, seasonal
+                        foraging, and uncompromising execution led by our world-renowned culinary brigade.
+                    </p>
+
+                    <!-- Interactive Chef Switcher Cards -->
+                    <div class="space-y-3 pt-2">
+                        <!-- Switcher 1 -->
+                        <div onclick="switchArtisan('chef')" id="artisanTab-chef"
+                            class="p-4 rounded-2xl bg-white/80 border border-emerald-900/20 cursor-pointer hover:border-gold transition-all duration-300 shadow-sm flex items-center justify-between group">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-stone-900 text-gold flex items-center justify-center font-serif font-bold text-sm">
+                                    AC</div>
+                                <div>
+                                    <h4
+                                        class="font-serif text-sm font-bold text-stone-900 group-hover:text-gold transition-colors">
+                                        Antoine De La Croix</h4>
+                                    <p class="text-xs text-stone-500">Executive Chef & Founder</p>
+                                </div>
+                            </div>
+                            <i
+                                class="fa-solid fa-chevron-right text-xs text-stone-400 group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+
+                        <!-- Switcher 2 -->
+                        <div onclick="switchArtisan('sommelier')" id="artisanTab-sommelier"
+                            class="p-4 rounded-2xl bg-white/40 border border-stone-200 cursor-pointer hover:border-gold transition-all duration-300 flex items-center justify-between group">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-stone-200 text-stone-800 flex items-center justify-center font-serif font-bold text-sm">
+                                    EL</div>
+                                <div>
+                                    <h4
+                                        class="font-serif text-sm font-bold text-stone-900 group-hover:text-gold transition-colors">
+                                        Evelyn Laurent</h4>
+                                    <p class="text-xs text-stone-500">Master Sommelier & Wine Curator</p>
+                                </div>
+                            </div>
+                            <i
+                                class="fa-solid fa-chevron-right text-xs text-stone-400 group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+
+                        <!-- Switcher 3 -->
+                        <div onclick="switchArtisan('pastry')" id="artisanTab-pastry"
+                            class="p-4 rounded-2xl bg-white/40 border border-stone-200 cursor-pointer hover:border-gold transition-all duration-300 flex items-center justify-between group">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-stone-200 text-stone-800 flex items-center justify-center font-serif font-bold text-sm">
+                                    MN</div>
+                                <div>
+                                    <h4
+                                        class="font-serif text-sm font-bold text-stone-900 group-hover:text-gold transition-colors">
+                                        Marcello Neri</h4>
+                                    <p class="text-xs text-stone-500">Head Pastry Architect</p>
+                                </div>
+                            </div>
+                            <i
+                                class="fa-solid fa-chevron-right text-xs text-stone-400 group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 03: TACTILE ARCHITECTURE & ATMOSPHERE
+             Background Color: Champagne Pearl (#FAF6F0)
+             Shape: Curved Portal / Inverse Pill Mask (border-radius: 200px 0px 200px 0px)
+             ========================================== -->
+        <section id="section-architecture"
+            class="rounded-3xl bg-champagne/95 backdrop-blur-xl p-8 sm:p-12 lg:p-16 shadow-2xl border border-stone-200/80 transition-all duration-500">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+                <!-- Left Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="text-xs font-bold tracking-widest text-amber-800 uppercase bg-amber-100 px-3 py-1 rounded-md">03</span>
+                        <span class="h-px w-12 bg-amber-800/30"></span>
+                        <span class="text-xs uppercase tracking-widest font-semibold text-stone-500">Space &
+                            Design</span>
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-5xl text-stone-900 leading-tight">
+                        Tactile Architecture & <span class="text-gold-gradient italic font-normal">Atmosphere</span>
+                    </h2>
+
+                    <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
+                        Designed in collaboration with minimalist architectural luminaries, MAISON’s interior is a study
+                        in quiet luxury. Hand-troweled Venetian plaster, acoustically tuned ambient domes, and
+                        low-voltage warm illumination create an otherworldly intimacy.
+                    </p>
+
+                    <!-- Feature Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-white/70 border border-stone-200/80 space-y-1">
+                            <i class="fa-solid fa-sliders text-gold text-sm mb-1"></i>
+                            <h4 class="font-serif text-sm font-bold text-stone-900">Acoustic Engineering</h4>
+                            <p class="text-xs text-stone-500 font-light">Custom sound dampening allows intimate
+                                whisper-level conversations.</p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-white/70 border border-stone-200/80 space-y-1">
+                            <i class="fa-solid fa-sun text-gold text-sm mb-1"></i>
+                            <h4 class="font-serif text-sm font-bold text-stone-900">Circadian Lighting</h4>
+                            <p class="text-xs text-stone-500 font-light">Adaptive light temperatures that shift
+                                seamlessly with sunset.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Unique Image Frame: Inverse Portal Pill Shape (200px 0px 200px 0px) -->
+                <div class="lg:col-span-6 relative flex justify-center items-center">
+
+                    <!-- Decorative Floating Backdrop Card -->
+                    <div class="absolute -inset-3 bg-stone-900/5 shape-portal-inverse transform rotate-2"></div>
+
+                    <div
+                        class="relative z-10 w-full overflow-hidden shape-portal-inverse border-2 border-gold/30 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=1000"
+                            alt="MAISON Interior Design"
+                            class="w-full h-[450px] sm:h-[520px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                            onerror="this.src='https://placehold.co/800x1000/FAF6F0/1A1817?text=MAISON+Architecture'">
+
+                        <!-- Corner Luxury Gold Seal -->
+                        <div
+                            class="absolute top-6 right-6 w-16 h-16 rounded-full backdrop-blur-md bg-stone-900/90 text-gold border border-gold/40 flex flex-col items-center justify-center p-2 text-center shadow-lg">
+                            <span class="text-[9px] uppercase tracking-widest font-bold">Design</span>
+                            <span class="font-serif text-xs font-bold">Award</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 04: TERROIR & LOCAL SUSTAINABILITY
+             Background Color: Warm Sand (#F5EFE6)
+             Shape: Scalloped Octagonal Geometric Frame
+             ========================================== -->
+        <section id="section-sustainability"
+            class="rounded-3xl bg-sand/95 backdrop-blur-xl p-8 sm:p-12 lg:p-16 shadow-2xl border border-stone-200/80 transition-all duration-500">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+                <!-- Left Unique Image Frame: Scalloped Octagonal Geometric Shape -->
+                <div class="lg:col-span-6 order-2 lg:order-1 relative flex justify-center items-center">
+
+                    <!-- Outer Halo Pattern -->
+                    <div
+                        class="absolute w-[360px] h-[360px] sm:w-[460px] sm:h-[460px] rounded-full border border-stone-400/30 border-dashed animate-spin-slow">
+                    </div>
+
+                    <div
+                        class="relative z-10 clip-scalloped-octagon w-full max-w-[420px] h-[420px] sm:h-[460px] overflow-hidden bg-stone-900 shadow-2xl group border-2 border-gold/40">
+                        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=1000"
+                            alt="Organic Terroir Farm"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                            onerror="this.src='https://placehold.co/800x1000/F5EFE6/1A1817?text=Organic+Terroir'">
+
+                        <!-- Overlay Badge -->
+                        <div class="absolute inset-0 bg-stone-900/20 group-hover:bg-transparent transition-colors">
+                        </div>
+                        <div
+                            class="absolute bottom-6 left-1/2 -translate-x-1/2 backdrop-blur-md bg-stone-900/85 text-white px-6 py-2.5 rounded-full border border-gold/30 text-xs font-semibold whitespace-nowrap">
+                            <i class="fa-solid fa-leaf text-emerald-400 mr-2"></i> 100% Biodynamic Partner Farms
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content Section -->
+                <div class="lg:col-span-6 order-1 lg:order-2 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="text-xs font-bold tracking-widest text-amber-900 uppercase bg-amber-200/60 px-3 py-1 rounded-md">04</span>
+                        <span class="h-px w-12 bg-amber-900/30"></span>
+                        <span class="text-xs uppercase tracking-widest font-semibold text-stone-500">Conscious
+                            Gastronomy</span>
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-5xl text-stone-900 leading-tight">
+                        Terroir & Local <span class="text-gold-gradient italic font-normal">Sustainability</span>
+                    </h2>
+
+                    <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
+                        We believe true luxury honors the earth. Over 85% of our rare botanicals, heirloom vegetables,
+                        and dairy are harvested daily from our dedicated organic estates in Pathankot and regional
+                        regenerative growers within an 80-kilometer radius.
+                    </p>
+
+                    <!-- Metrics Grid -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-5 rounded-2xl bg-white/80 border border-stone-200">
+                            <div class="font-serif text-3xl font-bold text-stone-900">0%</div>
+                            <p class="text-xs text-stone-500 font-medium uppercase tracking-wider mt-1">Single-Use
+                                Plastics</p>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-white/80 border border-stone-200">
+                            <div class="font-serif text-3xl font-bold text-stone-900">&lt; 80 km</div>
+                            <p class="text-xs text-stone-500 font-medium uppercase tracking-wider mt-1">Farm-to-Table
+                                Radius</p>
+                        </div>
+                    </div>
+
+                    <!-- Quote Box -->
+                    <div class="p-4 rounded-2xl bg-stone-900 text-white border border-gold/30 flex items-start gap-3">
+                        <i class="fa-solid fa-quote-left text-gold text-lg mt-1"></i>
+                        <p class="text-xs text-stone-300 italic font-serif leading-relaxed">
+                            "We do not inherit the land from our ancestors; we borrow it from our children."
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 05: THE 5-SENSORY GASTRONOMIC RITUAL
+             Background Color: Soft Rose Cashmere (#FAF3EE)
+             Shape: Overlapping Dual-Circle & Pill Composition
+             ========================================== -->
+        <section id="section-sensory"
+            class="rounded-3xl bg-roseCashmere/95 backdrop-blur-xl p-8 sm:p-12 lg:p-16 shadow-2xl border border-stone-200/80 transition-all duration-500">
+            <div class="space-y-12">
+
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto space-y-4">
+                    <div class="inline-flex items-center gap-3">
+                        <span
+                            class="text-xs font-bold tracking-widest text-rose-900 uppercase bg-rose-100 px-3 py-1 rounded-md">05</span>
+                        <span class="h-px w-12 bg-rose-900/30"></span>
+                        <span class="text-xs uppercase tracking-widest font-semibold text-stone-500">The
+                            Experience</span>
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-5xl text-stone-900 leading-tight">
+                        The 5-Sensory <span class="text-gold-gradient italic font-normal">Gastronomic Ritual</span>
+                    </h2>
+
+                    <p class="text-stone-600 text-sm sm:text-base font-light">
+                        Dining at MAISON is curated as a multi-act symphony that engages all five human senses in
+                        harmony.
+                    </p>
+                </div>
+
+                <!-- Main Section Grid: Overlapping Shape Graphic + Interactive Cards -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                    <!-- Left: Overlapping Dual Circle & Pill Shape Composition -->
+                    <div class="lg:col-span-6 relative flex justify-center items-center py-6">
+
+                        <!-- Shape 1: Outer Curved Pill Canvas -->
+                        <div
+                            class="w-[280px] h-[400px] sm:w-[320px] sm:h-[440px] shape-pill-large bg-stone-900 overflow-hidden shadow-2xl relative border-2 border-gold/30">
+                            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=1000"
+                                alt="Plated Gastronomy Art"
+                                class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700"
+                                onerror="this.src='https://placehold.co/600x800/FAF3EE/1A1817?text=Gastronomy+Pill'">
+                        </div>
+
+                        <!-- Shape 2: Overlapping Circle Image frame -->
+                        <div
+                            class="absolute -right-2 sm:right-4 top-1/2 -translate-y-1/2 w-48 h-48 sm:w-60 sm:h-60 rounded-full border-4 border-white shadow-2xl overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800"
+                                alt="Wine Pouring Ritual"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                onerror="this.src='https://placehold.co/500x500/FAF3EE/1A1817?text=Sensory+Circle'">
+                        </div>
+
+                        <!-- Small Floating Badge -->
+                        <div
+                            class="absolute -left-2 bottom-12 backdrop-blur-md bg-stone-900/90 text-gold px-4 py-2 rounded-2xl border border-gold/40 text-xs font-semibold shadow-xl">
+                            <i class="fa-solid fa-sparkles mr-1"></i> Multi-Sensorial
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive 5-Sensory Cards -->
+                    <div class="lg:col-span-6 space-y-3">
+
+                        <!-- Sense 1: Taste -->
+                        <div
+                            class="p-4 rounded-2xl bg-white/80 border border-stone-200/80 hover:border-gold transition-all duration-300 shadow-sm flex items-start gap-4 group">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gold/10 text-gold flex items-center justify-center shrink-0 group-hover:bg-gold group-hover:text-stone-950 transition-colors">
+                                <i class="fa-solid fa-utensils text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-sm font-bold text-stone-900">01. Taste (Gustatory)</h4>
+                                <p class="text-xs text-stone-600 font-light mt-0.5">Harmonious balance of umami, subtle
+                                    acidity, and natural sweetness extracted through slow reduction.</p>
+                            </div>
+                        </div>
+
+                        <!-- Sense 2: Aroma -->
+                        <div
+                            class="p-4 rounded-2xl bg-white/80 border border-stone-200/80 hover:border-gold transition-all duration-300 shadow-sm flex items-start gap-4 group">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gold/10 text-gold flex items-center justify-center shrink-0 group-hover:bg-gold group-hover:text-stone-950 transition-colors">
+                                <i class="fa-solid fa-wind text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-sm font-bold text-stone-900">02. Aroma (Olfactory)</h4>
+                                <p class="text-xs text-stone-600 font-light mt-0.5">Tableside infusion of smoked pine,
+                                    dried rose petals, and distilled herbal steam.</p>
+                            </div>
+                        </div>
+
+                        <!-- Sense 3: Vision -->
+                        <div
+                            class="p-4 rounded-2xl bg-white/80 border border-stone-200/80 hover:border-gold transition-all duration-300 shadow-sm flex items-start gap-4 group">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gold/10 text-gold flex items-center justify-center shrink-0 group-hover:bg-gold group-hover:text-stone-950 transition-colors">
+                                <i class="fa-solid fa-eye text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-sm font-bold text-stone-900">03. Vision (Visual Plating)</h4>
+                                <p class="text-xs text-stone-600 font-light mt-0.5">Plated on bespoke ceramic stoneware
+                                    designed specifically for each distinct course.</p>
+                            </div>
+                        </div>
+
+                        <!-- Sense 4: Sound -->
+                        <div
+                            class="p-4 rounded-2xl bg-white/80 border border-stone-200/80 hover:border-gold transition-all duration-300 shadow-sm flex items-start gap-4 group">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gold/10 text-gold flex items-center justify-center shrink-0 group-hover:bg-gold group-hover:text-stone-950 transition-colors">
+                                <i class="fa-solid fa-music text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-sm font-bold text-stone-900">04. Sound (Auditory Acoustics)
+                                </h4>
+                                <p class="text-xs text-stone-600 font-light mt-0.5">Curated vinyl soundscapes calibrated
+                                    to match the tempo and temperature of your dinner menu.</p>
+                            </div>
+                        </div>
+
+                        <!-- Sense 5: Touch -->
+                        <div
+                            class="p-4 rounded-2xl bg-white/80 border border-stone-200/80 hover:border-gold transition-all duration-300 shadow-sm flex items-start gap-4 group">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gold/10 text-gold flex items-center justify-center shrink-0 group-hover:bg-gold group-hover:text-stone-950 transition-colors">
+                                <i class="fa-solid fa-hand text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-sm font-bold text-stone-900">05. Touch (Tactile Textures)
+                                </h4>
+                                <p class="text-xs text-stone-600 font-light mt-0.5">Heavy linen napkins, raw stone table
+                                    surfaces, and hand-blown crystal glass stemware.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- RESERVATION CALL TO ACTION BANNER (NO FOOTER BELOW THIS) -->
+        <section
+            class="rounded-3xl bg-stone-900 text-white p-8 sm:p-12 lg:p-16 text-center relative overflow-hidden shadow-2xl border border-gold/30">
+            <!-- Background Radial Glow -->
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none">
+            </div>
+
+            <div class="relative z-10 max-w-3xl mx-auto space-y-6">
+                <span
+                    class="text-xs font-bold tracking-widest text-gold uppercase bg-gold/10 px-4 py-1.5 rounded-full border border-gold/30">
+                    An Unforgettable Journey Awaits
+                </span>
+
+                <h2 class="font-serif text-3xl sm:text-5xl font-normal leading-tight">
+                    Reserve Your Seat at the <span class="text-gold-gradient italic">Epicurean Table</span>
+                </h2>
+
+                <p class="text-stone-300 text-sm sm:text-base font-light leading-relaxed">
+                    Reservations open 30 days in advance. Experience the fusion of art, terroir, and culinary mastery.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <button onclick="openReservationModal()"
+                        class="w-full sm:w-auto px-8 py-3.5 bg-gold text-stone-950 rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-gold-light transition-all shadow-lg hover:scale-105">
+                        Book a Table Online
+                    </button>
+                    <a href="tel:+1234567890"
+                        class="w-full sm:w-auto px-8 py-3.5 bg-transparent border border-white/30 text-white rounded-xl font-bold uppercase text-xs tracking-widest hover:bg-white/10 transition-all">
+                        Concierge: +1 (800) 888-MAISON
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RESERVATION MODAL POPUP -->
+    <div id="reservationModal"
+        class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div
+            class="bg-stone-900 text-white w-full max-w-lg rounded-3xl p-6 sm:p-8 border border-gold/40 shadow-2xl relative transform transition-all">
+
+            <!-- Close Button -->
+            <button onclick="closeReservationModal()"
+                class="absolute top-6 right-6 text-stone-400 hover:text-gold text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center space-y-2 mb-6">
+                <span class="text-gold text-xs font-bold uppercase tracking-widest">MAISON Hospitality</span>
+                <h3 class="font-serif text-2xl font-bold text-white">Table Reservation</h3>
+                <p class="text-xs text-stone-400 font-light">Select your preferred date, time, and party size.</p>
+            </div>
+
+            <!-- Form -->
+            <form onsubmit="handleReservationSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-stone-300 font-medium mb-1">Full
+                        Name</label>
+                    <input type="text" required placeholder="Lord / Lady Carrington"
+                        class="w-full bg-stone-800 border border-stone-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold">
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label
+                            class="block text-xs uppercase tracking-wider text-stone-300 font-medium mb-1">Guests</label>
+                        <select
+                            class="w-full bg-stone-800 border border-stone-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold">
+                            <option>1 Person</option>
+                            <option selected>2 Guests</option>
+                            <option>4 Guests</option>
+                            <option>6 Guests (Chef Table)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label
+                            class="block text-xs uppercase tracking-wider text-stone-300 font-medium mb-1">Date</label>
+                        <input type="date" required
+                            class="w-full bg-stone-800 border border-stone-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-stone-300 font-medium mb-1">Seating
+                        Preference</label>
+                    <select
+                        class="w-full bg-stone-800 border border-stone-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold">
+                        <option>Main Dining Sanctuary</option>
+                        <option>Private Garden Atrium</option>
+                        <option>Chef's Counter Experience</option>
+                    </select>
+                </div>
+
+                <button type="submit"
+                    class="w-full mt-4 bg-gold text-stone-950 font-bold py-3 rounded-xl uppercase text-xs tracking-widest hover:bg-gold-light transition-colors">
+                    Confirm Reservation Request
+                </button>
+            </form>
+
+            <div id="modalMessage"
+                class="hidden mt-4 p-3 bg-emerald-900/60 border border-emerald-500/40 rounded-xl text-center text-xs text-emerald-200">
+                <i class="fa-solid fa-circle-check mr-1"></i> Your reservation request has been transmitted to our
+                Concierge.
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="restaurant.html" class="logo">MAISON<span>.</span></a>
+                <p>A haute gastronomy sanctuary combining seasonal organic ingredients, artisanal mixology, and timeless
+                    French-Mediterranean hospitality in Pathankot.</p>
+
+                <!-- Social Icons with rounded transparent border & gold theme fill on hover -->
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" class="social-btn" aria-label="Facebook"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://whatsapp.com" target="_blank" class="social-btn" aria-label="WhatsApp"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                     <li><a href="index.html">Home Experience</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="#menu">Seasonal Menus</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#blogs">Our Blogs</a></li>
+                    <li><a href="#reservation">Quick Reservation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Services Provided</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">Private Dining Suites</a></li>
+                    <li><a href="#services">Chef's Tasting Table</a></li>
+                    <li><a href="#services">Corporate Gala Dinners</a></li>
+                    <li><a href="#services">Artisanal Cocktail Lounge</a></li>
+                    <li><a href="#services">Luxury Event Catering</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Location & Hours</h4>
+                <ul class="footer-links" style="color: rgba(255,255,255,0.7); line-height: 1.8;">
+                    <li><i class="fa-solid fa-location-dot" style="color: var(--gold-primary); margin-right: 8px;"></i>
+                        Pathankot, Punjab</li>
+                    <li><i class="fa-solid fa-clock" style="color: var(--gold-primary); margin-right: 8px;"></i> Mon -
+                        Sun: 12:00
+                        PM - 11:30 PM</li>
+                    <li><i class="fa-solid fa-phone" style="color: var(--gold-primary); margin-right: 8px;"></i> +91
+                        7858964251
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Giant Glowing Website Name -->
+        <h1 class="giant-glowing-title">MAISON</h1>
+
+        <!-- Copyright and credits -->
+        <div class="footer-bottom">
+            <p>© 2026 <strong>MAISON Restaurant</strong>. All rights reserved. Created by <strong><a
+                        href="https://liin-coders.github.io/liinstudio/">LiinStudio</a></strong>.
+            </p>
+        </div>
+    </footer>
+    <script src="aboutscript.js"></script>
+</body>
+
+</html>
